@@ -1,5 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Sen:wght@400..800&family=Urbanist:ital,wght@0,100..900;1,100..900&display=swap');
+
 :root {
-  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  font-family: "Sen", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+
   line-height: 1.5;
   font-weight: 400;
 
@@ -15,11 +20,11 @@
 
 a {
   font-weight: 500;
-  color: #646cff;
+  color: #ff00a4;
   text-decoration: inherit;
 }
 a:hover {
-  color: #535bf2;
+  color: #ff00a4;
 }
 
 body {
@@ -28,11 +33,6 @@ body {
   place-items: center;
   min-width: 320px;
   min-height: 100vh;
-}
-
-h1 {
-  font-size: 3.2em;
-  line-height: 1.1;
 }
 
 button {
@@ -45,14 +45,23 @@ button {
   background-color: #1a1a1a;
   cursor: pointer;
   transition: border-color 0.25s;
+  color: #ffffff
 }
 button:hover {
-  border-color: #646cff;
+  border-color: #FF00A4;
 }
 button:focus,
 button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
+
+div.logo {
+  background-image: url(/whiteout-logo.png);
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
 
 @media (prefers-color-scheme: light) {
   :root {
@@ -60,9 +69,13 @@ button:focus-visible {
     background-color: #ffffff;
   }
   a:hover {
-    color: #747bff;
+    color: #ff00a4;
   }
   button {
     background-color: #f9f9f9;
+    color: #213547;
+  }
+  div.logo {
+    background-image: url(/logo.png);
   }
 }
