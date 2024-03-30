@@ -55,6 +55,12 @@ button:focus-visible {
   outline: 4px auto -webkit-focus-ring-color;
 }
 
+div.container {
+  border-radius: 50%;
+  padding: 80px;
+  background-color: #282828;
+}
+
 div.logo {
   background-image: url(/whiteout-logo.png);
   background-position: center;
@@ -78,4 +84,8 @@ div.logo {
   div.logo {
     background-image: url(/logo.png);
   }
+  div.container {
+    background-color: #fbfbfb;
+  }
+  
 }
